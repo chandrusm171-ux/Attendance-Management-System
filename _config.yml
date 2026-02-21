@@ -1,0 +1,8 @@
+exclude:
+  - server/node_modules
+  - server
+  - client/node_modules
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
