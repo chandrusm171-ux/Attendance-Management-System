@@ -38,7 +38,7 @@ This is a production-ready attendance management platform where:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 | Technology | Purpose |
