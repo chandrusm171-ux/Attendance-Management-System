@@ -175,7 +175,7 @@ Attendance System Management/
 
 If using Git:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/chandrusm171-ux/Attendance-Management-System.git
 cd "Attendance System Management"
 ```
 
