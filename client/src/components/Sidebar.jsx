@@ -4,7 +4,7 @@ import { LayoutDashboard, Users, BookOpen, ClipboardList, LogOut, GraduationCap,
 const links = {
   admin: [
     { to: '/admin/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { to: '/admin/profile', label: 'My Profile', icon: UserCircle },   // ← ADD
+    { to: '/admin/profile', label: 'My Profile', icon: UserCircle },   
     { to: '/admin/users', label: 'User Accounts', icon: UserCog },
     { to: '/admin/students', label: 'Students', icon: GraduationCap },
     { to: '/admin/teachers', label: 'Teachers', icon: Users },
@@ -16,12 +16,12 @@ const links = {
   ],
   teacher: [
     { to: '/teacher/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { to: '/teacher/profile', label: 'My Profile', icon: UserCircle },  // ← ADD
+    { to: '/teacher/profile', label: 'My Profile', icon: UserCircle }, 
     { to: '/teacher/attendance', label: 'Attendance', icon: ClipboardList },
   ],
   student: [
     { to: '/student/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { to: '/student/profile', label: 'My Profile', icon: UserCircle },  // ← ADD
+    { to: '/student/profile', label: 'My Profile', icon: UserCircle }, 
     { to: '/student/attendance', label: 'Attendance', icon: ClipboardList },
   ],
 }

@@ -48,10 +48,10 @@ export default function AdminSubjects() {
     try {
       if (editId) {
         await api.put(`/subjects/${editId}`, form)
-        setMsg('✅ Subject updated!')
+        setMsg('Subject updated!')
       } else {
         await api.post('/subjects', form)
-        setMsg('✅ Subject created!')
+        setMsg('Subject created!')
       }
       setForm(empty)
       setEditId(null)
@@ -108,7 +108,7 @@ export default function AdminSubjects() {
                   <div className="p-2 bg-indigo-50 rounded-xl">
                     <BookOpen size={20} className="text-indigo-600" />
                   </div>
-                  {/* ✅ Edit + Delete buttons */}
+                  {/*  Edit + Delete buttons */}
                   <div className="flex gap-1">
                     <button onClick={() => openEdit(s)}
                       className="p-1.5 text-indigo-500 hover:bg-indigo-50 rounded-lg transition-all"

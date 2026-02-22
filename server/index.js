@@ -35,7 +35,7 @@ app.get('/api/health', (_, res) => res.json({ status: 'OK' }))
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
-    app.listen(5000, () => console.log('✅ Server on port 5000'))
-    console.log('✅ MongoDB connected')
+    app.listen(5000, () => console.log('Server on port 5000'))
+    console.log('MongoDB connected')
   })
   .catch(err => console.error('❌', err.message))

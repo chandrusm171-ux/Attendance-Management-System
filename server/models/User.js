@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema({
   profileImage: { type: String, default: '' },
 }, { timestamps: true, collection: 'users' })
 
-// ✅ Async pre-save — NO next() parameter needed in modern Mongoose
+// Async pre-save — NO next() parameter needed in modern Mongoose
 userSchema.pre('save', async function () {
   if (!this.isModified('password')) return
   this.password = await bcrypt.hash(this.password, 10)

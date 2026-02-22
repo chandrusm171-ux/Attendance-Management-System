@@ -39,7 +39,7 @@ export default function AdminExams() {
     setLoading(true)
     try {
       await api.put(`/students/${selected._id}/exams`, exams)
-      setMsg('✅ Exam schedule saved!')
+      setMsg('Exam schedule saved!')
       load()
       setTimeout(() => { setMsg(''); setModal(false) }, 1500)
     } catch (err) {

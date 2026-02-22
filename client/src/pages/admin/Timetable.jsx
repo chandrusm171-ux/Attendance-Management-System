@@ -47,7 +47,7 @@ export default function AdminTimetable() {
         ? `/students/${selected._id}/timetable`
         : `/teachers/${selected._id}/timetable`
       await api.put(url, slots)
-      setMsg('✅ Timetable saved!')
+      setMsg('Timetable saved!')
       load()
       setTimeout(() => { setMsg(''); setModal(false) }, 1500)
     } catch (err) {

@@ -24,7 +24,7 @@ export default function StudentDashboard() {
       <Sidebar />
       <main className="flex-1 p-8">
         <div className="mb-6">
-          <h2 className="text-2xl font-bold text-gray-800">Welcome, {student?.fullName} 👋</h2>
+          <h2 className="text-2xl font-bold text-gray-800">Welcome, {student?.fullName} </h2>
           <p className="text-gray-500 text-sm mt-1">
             {student?.degree} • {student?.department} • Year {student?.year}
           </p>
@@ -65,7 +65,7 @@ export default function StudentDashboard() {
             <div className={`mt-2 p-2.5 rounded-xl text-xs font-medium text-center ${
               percent >= 75 ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-600'
             }`}>
-              {percent >= 75 ? '✅ Good standing' : `⚠️ Need ${Math.ceil((0.75 * attendance.length - present) / 0.25)} more classes for 75%`}
+              {percent >= 75 ? 'Good standing' : `Need ${Math.ceil((0.75 * attendance.length - present) / 0.25)} more classes for 75%`}
             </div>
           </div>
 

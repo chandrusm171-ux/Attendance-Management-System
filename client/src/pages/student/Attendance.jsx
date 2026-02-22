@@ -114,14 +114,14 @@ export default function StudentAttendance() {
                 {percentage < 75 && (
                   <div className="mt-3 p-3 bg-red-50 rounded-xl border border-red-100">
                     <p className="text-red-600 text-xs font-medium">
-                      ⚠️ Attendance below 75% — you need {Math.ceil((0.75 * total - present) / 0.25)} more classes to reach 75%
+                       Attendance below 75% — you need {Math.ceil((0.75 * total - present) / 0.25)} more classes to reach 75%
                     </p>
                   </div>
                 )}
                 {percentage >= 75 && (
                   <div className="mt-3 p-3 bg-green-50 rounded-xl border border-green-100">
                     <p className="text-green-600 text-xs font-medium">
-                      ✅ Good attendance! Keep it up.
+                       Good attendance! Keep it up.
                     </p>
                   </div>
                 )}

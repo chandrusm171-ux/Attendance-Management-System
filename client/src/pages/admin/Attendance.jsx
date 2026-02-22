@@ -14,7 +14,7 @@ export default function AdminAttendance() {
   useEffect(() => {
     api.get('/subjects').then(r => setSubjects(r.data))
     api.get('/students').then(r => setStudents(r.data))
-    loadRecords() // ← Load ALL records on mount
+    loadRecords() 
   }, [])
 
   const loadRecords = async (customFilter) => {
@@ -26,7 +26,6 @@ export default function AdminAttendance() {
       if (f.studentId) params.append('studentId', f.studentId)
       if (f.date) params.append('date', f.date)
       const { data } = await api.get(`/attendance?${params}`)
-      // Filter by status client-side
       const filtered = f.status
         ? data.filter(r => r.status === f.status)
         : data

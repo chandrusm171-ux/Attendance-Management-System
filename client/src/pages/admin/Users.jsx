@@ -31,7 +31,7 @@ export default function AdminUsers() {
       await api.put(`/auth/users/${activeUploadUser}/profile-image`, fd, {
         headers: { 'Content-Type': 'multipart/form-data' }
       })
-      alert('✅ Photo updated!')
+      alert('Photo updated!')
       load()
     } catch {
       alert('Failed to upload photo')
@@ -60,7 +60,7 @@ export default function AdminUsers() {
         username: editForm.username.trim(),
         ...(editForm.password && { password: editForm.password })
       })
-      setEditMsg('✅ User updated!')
+      setEditMsg('User updated!')
       load()
       setTimeout(() => { setEditMsg(''); setEditModal(false) }, 1500)
     } catch (err) {
@@ -84,7 +84,7 @@ export default function AdminUsers() {
       await api.post('/auth/create-user', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       })
-      setMsg('✅ User created!')
+      setMsg('User created!')
       setForm({ username: '', password: '', role: 'student' })
       load()
       setTimeout(() => { setMsg(''); setModal(false) }, 1500)
@@ -178,7 +178,7 @@ export default function AdminUsers() {
                   <td className="px-6 py-4 text-gray-500">
                     {new Date(u.createdAt).toLocaleDateString()}
                   </td>
-                  {/* ✅ Three action buttons: Edit + Camera + Delete */}
+                  {/* Three action buttons: Edit + Camera + Delete */}
                   <td className="px-6 py-4">
                     <div className="flex gap-1 items-center">
                       {/* Edit */}
@@ -272,7 +272,7 @@ export default function AdminUsers() {
           </div>
         )}
 
-        {/* ✅ Edit User Modal */}
+        {/* Edit User Modal */}
         {editModal && editUser && (
           <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
             <div className="bg-white rounded-2xl p-6 w-full max-w-md shadow-2xl">

@@ -37,7 +37,7 @@ export default function AdminProfile() {
       })
       localStorage.setItem('profileImage', data.profileImage)
       setUser(u => ({ ...u, profileImage: data.profileImage }))
-      setSuccessMsg('✅ Profile picture updated!')
+      setSuccessMsg('Profile picture updated!')
       setTimeout(() => setSuccessMsg(''), 3000)
     } catch {
       alert('Failed to upload image')

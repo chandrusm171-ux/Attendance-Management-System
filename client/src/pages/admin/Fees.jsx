@@ -35,7 +35,7 @@ export default function AdminFees() {
         dueDate: form.dueDate,
         description: form.description
       })
-      setMsg('✅ Fees updated!')
+      setMsg('Fees updated!')
       load()
       setTimeout(() => { setMsg(''); setModal(false) }, 1500)
     } catch (err) {
